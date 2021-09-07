@@ -7,19 +7,19 @@
     android:background="@drawable/background">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/ivFoodImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/coffee_pot" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvFoodName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tvFoodDesc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView" />
