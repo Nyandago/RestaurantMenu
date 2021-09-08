@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/myProjects/RestaurantMenu/app/src/main/res/drawable/background.xml" value="0.14351851851851852" />
+        <entry key="..\:/myProjects/RestaurantMenu/app/src/main/res/layout/activity_food_details.xml" value="0.1962962962962963" />
         <entry key="..\:/myProjects/RestaurantMenu/app/src/main/res/layout/activity_main.xml" value="0.22083333333333333" />
         <entry key="..\:/myProjects/RestaurantMenu/app/src/main/res/layout/food_card.xml" value="0.25" />
       </map>

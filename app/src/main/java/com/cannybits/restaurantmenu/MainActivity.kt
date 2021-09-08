@@ -1,6 +1,7 @@
 package com.cannybits.restaurantmenu
 
 import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -57,6 +58,13 @@ class MainActivity : AppCompatActivity() {
             var inflater = context!!.getSystemService(LAYOUT_INFLATER_SERVICE) as LayoutInflater
             var foodView = inflater.inflate(R.layout.food_card,null)
             foodView.ivFoodImage.setImageResource(food.image!!)
+            foodView.ivFoodImage.setOnClickListener{
+                val intent = Intent(context, FoodDetails::class.java)
+                intent.putExtra("name",food.name)
+                intent.putExtra("desc",food.desc)
+                intent.putExtra("image",food.image)
+                context!!.startActivity(intent)
+            }
             foodView.tvFoodName.text = food.name!!
             return foodView
         }
