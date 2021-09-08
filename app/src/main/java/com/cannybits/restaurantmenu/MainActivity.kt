@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
+import kotlinx.android.synthetic.main.food_card.view.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -48,9 +49,12 @@ class MainActivity : AppCompatActivity() {
         }
 
         override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
-         var inflater = context!!.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+            val food = this.foodList[position]
+            var inflater = context!!.getSystemService(LAYOUT_INFLATER_SERVICE) as LayoutInflater
             var foodView = inflater.inflate(R.layout.food_card,null)
-            foodView.iv
+            foodView.ivFoodImage.setImageResource(food.image!!)
+            foodView.tvFoodName.text = food.name!!
+            return foodView
         }
     }
 }
