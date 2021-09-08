@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.food_card.view.*
 
 class MainActivity : AppCompatActivity() {
@@ -24,7 +25,10 @@ class MainActivity : AppCompatActivity() {
         foodList.add(Food("Honey","Asali tamu kutoka Tabora",R.drawable.honey))
         foodList.add(Food("Strawberry Ice Cream","Ice cream ya matunda ya straw berry",R.drawable.strawberry_ice_cream))
         foodList.add(Food("Sugar Cubes","Sukari guru ile yenyewe kabisa",R.drawable.sugar_cubes))
+
         adapter = FoodAdapter(this, foodList)
+
+        gvFoodList.adapter = adapter
     }
 
     class FoodAdapter : BaseAdapter{
